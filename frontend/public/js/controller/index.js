@@ -406,6 +406,36 @@ class Controller {
      * @public
      * @param {*}
      */
+    renderMyNameAfterUpdate() {
+        this.view.renderModalUpdateUser();
+        let btnUpdateUser = document.querySelector('#btn_update_user');
+        btnUpdateUser.addEventListener('click', () => {
+            let newNameUser = document.querySelector('#username_update').value;
+            let idUser = this.storage.get('id_user');
+            this.model.updateUser({ username: newNameUser }, idUser)
+                .then(response => {
+                    if(response.status === 200){
+                        this.view.removeElement('wrapper__modal');
+                        this.storage.set('name', newNameUser);
+                        this.alert.success('Nome de usuário atualizado com sucesso');
+                        this.view.renderMyName()
+                        this.model.getMessagesAll()
+                            .then((messages) =>
+                                this.model.getUsers()
+                                    .then(usersGroup => this.renderInformationConversation(messages, usersGroup, true))
+                                    .catch(error => this.ERROR_HTTP.default(error)));
+
+                    } else {
+                        this.alert.error('Falha ao atualizar nome de usuário, tente novamente mais tarde!');
+                    }
+                }).catch(_=> this.alert.error('Falha ao atualizar nome de usuário, tente novamente mais tarde!'));
+        });
+    }
+
+    /**
+     * @public
+     * @param {*}
+     */
     chatListeners() {
         let elementSendMessage = document.querySelector('.send_icon');
         let inputMessage = document.querySelector('.input__send__message');
@@ -421,31 +451,7 @@ class Controller {
         btnUpload.addEventListener('click', () => this.view.renderModalUploadArquives());
         btnEmoji.addEventListener('click', () => this.view.renderModalSetEmoji());
         btnLogout.addEventListener('click', () => this.platform.logout());
-        btnMenuUser.addEventListener('click', () => {
-            this.view.renderModalUpdateUser();
-            let btnUpdateUser = document.querySelector('#btn_update_user');
-            btnUpdateUser.addEventListener('click', () => {
-                let newNameUser = document.querySelector('#username_update').value;
-                let idUser = this.storage.get('id_user');
-                this.model.updateUser({ username: newNameUser }, idUser)
-                    .then(response => {
-                        if(response.status === 200){
-                            this.view.removeElement('wrapper__modal');
-                            this.storage.set('name', newNameUser);
-                            this.alert.success('Nome de usuário atualizado com sucesso');
-                            this.view.renderMyName()
-                            this.model.getMessagesAll()
-                                .then((messages) =>
-                                    this.model.getUsers()
-                                        .then(usersGroup => this.renderInformationConversation(messages, usersGroup, true))
-                                        .catch(error => this.ERROR_HTTP.default(error)));
-
-                        } else {
-                            this.alert.error('Falha ao atualizar nome de usuário, tente novamente mais tarde!');
-                        }
-                    }).catch(_=> this.alert.error('Falha ao atualizar nome de usuário, tente novamente mais tarde!'));
-            });
-        });
+        btnMenuUser.addEventListener('click', () => this.renderMyNameAfterUpdate());
         divScrollConversations.addEventListener('scroll', (event) => this.view.onChangeScrollMessages(divScrollConversations, event));
 
         let imageConversation = document.querySelectorAll('.image__chat__conversation');
