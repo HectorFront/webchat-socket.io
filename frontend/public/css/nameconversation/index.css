@@ -1,0 +1,73 @@
+.name__image__conversation {
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.image__chat__conversation {
+    transition: 1s;
+    border-radius: 20%;
+}
+
+.name__conversation {
+    margin-left: 15px;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.name__conversation h6 {
+    color: #d1d1d1;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name__conversation span {
+    margin-top: 8px;
+    color: #d1d1d1;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.informations__conversations {
+    padding-right: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.informations__conversations .hour__message__or__day {
+    color: #d1d1d1;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.informations__conversations .total__messages {
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: #7289da;
+}
+
+.latest__message__conversation {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

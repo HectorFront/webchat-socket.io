@@ -1,0 +1,11 @@
+.box__chat {
+    width: auto;
+    height: 97%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-left: 1px solid #444d5c;
+    border-right: 1px solid #444d5c;
+    border-bottom: 1px solid #444d5c;
+    background-color: #1f232a;
+}

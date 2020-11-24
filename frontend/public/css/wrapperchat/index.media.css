@@ -1,0 +1,11 @@
+@media (max-width: 1380px) {
+    .wrapper__chat__actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .drop__to__bottom__messages {
+        bottom: 150px;
+    }
+}

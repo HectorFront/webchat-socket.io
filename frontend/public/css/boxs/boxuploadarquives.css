@@ -1,0 +1,70 @@
+.box__upload__arquives {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #444d5c;
+    background-color: #353e4d;
+}
+
+.box__upload__arquives ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.box__upload__arquives ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.file__upload__video {
+    cursor: pointer;
+    opacity: 0;
+    z-index: 110;
+    width: 50px;
+    height: 75px;
+    position: absolute;
+}
+
+.file__upload__image {
+    cursor: pointer;
+    opacity: 0;
+    z-index: 110;
+    width: 50px;
+    height: 75px;
+    position: absolute;
+}
+
+.box__upload__arquives ul li span {
+    margin-top: 10px;
+    color: #d1d1d1;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn__upload {
+    z-index: 100;
+    border: 0;
+    color: white;
+    outline: none;
+    font-size: 30px;
+    padding: 8px 10px;
+    border-radius: 100%;
+}
+
+.btn_upload_bg_image {
+    background-color: #ac44cf;
+}
+
+.btn_upload_bg_video {
+    background-color: #c72057;
+}

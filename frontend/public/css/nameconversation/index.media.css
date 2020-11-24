@@ -1,0 +1,16 @@
+@media (max-width: 1000px) {
+    .aside__name__conversation {
+        display: none;
+        transition: 0.4s;
+    }
+
+    .aside__informations__conversations {
+        display: none;
+        transition: 0.4s;
+    }
+
+    .aside__name__image__conversation {
+        padding-left: 0;
+        transition: 0.4s;
+    }
+}

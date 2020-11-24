@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+    .name__user__profile {
+        display: none;
+    }
+
+    .icon__menu__chat {
+        display: none;
+    }
+
+    #logout_chat {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    #logout_chat {
+        display: none;
+    }
+}

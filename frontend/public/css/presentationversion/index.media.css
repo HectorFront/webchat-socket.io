@@ -1,0 +1,6 @@
+@media (max-width: 1000px) {
+    .presentation__whats__fullcam {
+        transition: 0.4s;
+        display: none;
+    }
+}

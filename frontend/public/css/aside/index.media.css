@@ -1,0 +1,26 @@
+@media (max-width: 1000px) {
+    .aside__conversations {
+        transition: 0.4s;
+        width: 65px;
+    }
+    
+    .aside__contact__coversation {
+        transition: 0.4s;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .content__conversations {
+        transition: 0.4s;
+        width: auto;
+    }
+}
+
+@media (max-width: 585px) {
+    .aside__conversations {
+        display: none;
+    }
+}

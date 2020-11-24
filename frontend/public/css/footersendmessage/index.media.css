@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    .row__message__box {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .actions__message__chat ul {
+        margin-top: 10px;
+    }
+}

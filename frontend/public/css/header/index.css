@@ -1,0 +1,50 @@
+.template__informations__header {
+    width: 100%;
+    height: auto;
+}
+
+.header__conversations {
+    width: auto;
+    height: 59px;
+    margin: 0;
+    padding: 0 30px 0 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #444d5c;
+    background-color: #323843;
+}
+
+.actions__in__chat .icon__menu__chat{
+    color: #d1d1d1;
+    cursor: pointer;
+}
+
+.actions__in__chat .icon__menu__chat:hover {
+    color: #929292;
+}
+
+.icon__menu__chat:hover .image__chat__conversation{
+    transition: 1s;
+    border-radius: 100px;
+}
+
+.image__profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.name__user__profile {
+    color: #d1d1d1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image__user__profile__header {
+    cursor: pointer;
+}

@@ -1,0 +1,129 @@
+.content__data__mounth__messages {
+    width: 100%;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.content__data__mounth__messages .info__data__messages {
+    padding: 8px;
+    color: #e6e6e6;
+    width: auto;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #213474;
+}
+
+.content__message__default {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.content__message__my {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.item__conversation__user {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 350px;
+    min-width: 50px;
+    height: auto;
+    padding: 10px;
+    margin-top: 30px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 20px;
+    background-color: #3b4250;
+}
+
+.item__conversation__user:hover {
+    background-color: #484e63;
+}
+
+.name__user__conversation {
+    width: 100%;
+    font-size: 14px;
+    text-align: start;
+    color: #97aeff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.null__user {
+    margin-top: 5px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.my__item__conversation__user {
+    cursor: pointer;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 350px;
+    min-width: 50px;
+    height: auto;
+    padding: 10px;
+    margin-top: 3px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    background-color: #3b4970;
+}
+
+.my__item__conversation__user:hover {
+    background-color: #48557f;
+}
+
+.null__name__user__conversation {
+    position: relative;
+    width: 100%;
+    font-size: 11px;
+    text-align: start;
+    color: #f9b927;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.message__user__conversation {
+    width: 100%;
+    font-size: 14px;
+    color: #d1d1d1;
+    text-align: start;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hour__message {
+    position: relative;
+    margin-left: 5px;
+    font-size: 11px;
+    color: #f9b927;
+    font-family: Arial, Helvetica, sans-serif;
+}

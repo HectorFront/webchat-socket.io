@@ -1,0 +1,5 @@
+@media (max-width: 500px) {
+    .box__set__name__chat {
+        width: 100%;
+    }
+}

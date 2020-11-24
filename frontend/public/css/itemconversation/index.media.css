@@ -1,0 +1,10 @@
+@media (max-width: 500px) {
+    .item__conversation__user {
+        max-width: 270px;
+    }
+
+ 
+    .my__item__conversation__user {
+        max-width: 270px;
+    }
+}

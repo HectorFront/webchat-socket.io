@@ -1,0 +1,44 @@
+.aside__conversations {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 100%;
+    transition: 0.4s;
+    display: flex;
+    border-right: 1px solid #444d5c;
+    flex-direction: column;
+}
+
+.content__conversations {
+    width: 400px;
+    height: calc(100% - 59px);
+    margin: 0;
+    padding: 0;
+    background-color: #282d37;
+}
+
+.contact__coversation {
+    width: 100%;
+    cursor: pointer;
+    height: 72px;
+    border-bottom: 1px solid #444d5cd2;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #282d37;
+}
+
+.contact__coversation:hover {
+    background-color: #323842;
+}
+
+.content__main__chat {
+    width: 100%;
+    height: calc(100% - 59px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
