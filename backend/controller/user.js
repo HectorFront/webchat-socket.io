@@ -90,7 +90,7 @@ module.exports = {
         const id = request.params.id;
         const { username } = request.body;
 
-        const queryUpdateUser = `UPDATE profile_app SET name_user='${username}' WHERE id.=${id}`;
+        const queryUpdateUser = `UPDATE profile_app SET name_user='${username}' WHERE id = ${id}`;
         connection.query(queryUpdateUser, (err, resultsUpdateUser) => {
             if(err) throw err;
             Service.HTTP_CUSTOM_RESPONSE(200, 'send', resultsUpdateUser, response);

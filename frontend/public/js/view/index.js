@@ -53,8 +53,9 @@ class View {
         let templateUpdateUser = this.parseDOM_HTML(templateModalUpdateUser);
         this.containerMain.appendChild(templateUpdateUser);
 
-        let iconCloseModal = document.querySelector('.close__modal__update__user');
         let inputUpdateUser = document.querySelector('#username_update');
+        let iconCloseModal = document.querySelector('#close__modal__update__user');
+
         inputUpdateUser.value = this.storage.get('name');
         iconCloseModal.addEventListener('click', () => this.removeElement('wrapper__modal'));
     }
@@ -279,14 +280,21 @@ class View {
      * @public
      * @param {*}
      */
-    renderChat() {
-        this.containerMain.innerHTML = templateBoxChat;
-
+    renderMyName() {
         let spanNameUserProfile = document.querySelector('.name__user__profile');
         let imgUserProfile = document.querySelector('.image__user__profile__header');
 
         spanNameUserProfile.innerHTML = this.storage.get('name');
         imgUserProfile.setAttribute('title', this.storage.get('name'));
+    }
+
+    /**
+     * @public
+     * @param {*}
+     */
+    renderChat() {
+        this.containerMain.innerHTML = templateBoxChat;
+        this.renderMyName();
     }
 
     /**

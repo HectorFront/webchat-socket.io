@@ -16,7 +16,7 @@ class Model {
         return new Promise((resolve, reject) => {
             fetch(`${this.url}/post/chat/fullcam/message`, {
                 headers: this.headersJSON,
-                method: 'post',
+                method: 'POST',
                 body: JSON.stringify(messageObject)
             })
                 .then(response => resolve(response))
@@ -32,7 +32,7 @@ class Model {
         return new Promise((resolve, reject) => {
             fetch(`${this.url}/post/chat/fullcam/user`, {
                 headers: this.headersJSON,
-                method: 'post',
+                method: 'POST',
                 body: JSON.stringify(userObject)
             })
                 .then(response => response.json())
@@ -63,7 +63,7 @@ class Model {
         return new Promise((resolve, reject) => {
             fetch(`${this.url}/post/chat/fullcam/login`, {
                 headers: this.headersJSON,
-                method: 'post',
+                method: 'POST',
                 body: JSON.stringify(userObject)
             })
                 .then(response => response.json())
@@ -81,7 +81,7 @@ class Model {
             console.log(imageObject)
             fetch(`${this.url}/post/chat/fullcam/upload/image`, {
                 body: imageObject,
-                method: 'post'
+                method: 'POST'
             })
                 .then(response => resolve(response))
                 .catch(error => reject(error));
@@ -96,7 +96,7 @@ class Model {
         return new Promise((resolve, reject) => {
             fetch(`${this.url}/post/chat/fullcam/upload/video`, {
                 body: videoObject,
-                method: 'post'
+                method: 'POST'
             })
                 .then(response => resolve(response))
                 .catch(error => reject(error));
@@ -107,7 +107,7 @@ class Model {
         return new Promise((resolve, reject) => {
             fetch(`${this.url}/patch/chat/fullcam/user/${idUser}`, {
                 headers: this.headersJSON,
-                method: 'patch',
+                method: 'PATCH',
                 body: JSON.stringify(objectUser)
             })
                 .then(response => resolve(response))
