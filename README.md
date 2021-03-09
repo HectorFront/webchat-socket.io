@@ -1,3 +1,5 @@
+© Copyright 2021 @Author Hector Rodrigues Da Silva
+
 # Clone WhatsApp Web - FullCam. Dark Mode v1.0.0 – year 2020. 
 # Single-page application in pure JavaScript
 • **EM DESENVOLVIMENTO**:
